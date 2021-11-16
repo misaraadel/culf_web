@@ -1,0 +1,131 @@
+/*start general properties for website*/
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-Medium.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-Book.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-SemiBold.ttf);
+    font-weight: 900;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "ExpoArabic" , sans-serif ;
+    scroll-behavior: smooth;
+    &::selection{
+        background-color: #368B85;
+        color: #fff; 
+    }
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #ccc;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #368B85; 
+        border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #FFD371; 
+    }
+}
+.overflowNone{
+    overflow: hidden;
+}
+.btn:focus,
+button:focus,
+input:focus,
+.form-control:focus {
+    outline-width: 0px !important;
+    outline-color: transparent !important;
+    box-shadow: 0 0 0 0 rgba($color: #000000, $alpha: 0);
+}
+
+a {
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.owl-theme .owl-dots .owl-dot span{
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #34689c;
+    opacity: .5;
+    transition: all .5s linear;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #34689c;
+    opacity: 1;
+}
+.overflowNone{
+    overflow: hidden;
+}
+.custom-btn{
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #34689c;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2.5rem;
+    width: fit-content;
+    position: relative;
+    &::before{
+        content: attr(data-text);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #34689c;
+        color: #fff;
+        transition: .5s;
+        transform-origin: bottom;
+        transform: translateY(-100%) rotateX(90deg);
+    }
+    &::after{
+        content: attr(data-text);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #f7941d;
+        color: #fff;
+        transition: .5s;
+        transform-origin: top;
+        transform: translateY(0%) rotateX(0deg);
+    }
+    &:hover{
+        &::before{
+            transform: translateY(0%) rotateX(0deg);
+        }
+        &::after{
+            transform: translateY(100%) rotateX(-90deg);
+        }
+    }
+}

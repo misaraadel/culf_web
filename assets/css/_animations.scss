@@ -1,0 +1,40 @@
+/***************************** Start Animations *****************************/
+@keyframes rotate10deg {
+    0% , 100%{
+        transform: rotate(-12deg);
+    }
+    50%{
+        transform: rotate(12deg);
+    }
+}
+@keyframes moving {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    20%{
+        transform: translate(0px, -30px);
+    }
+    50%{
+        transform: translate(-100px, -30px);
+    }
+    70%{
+        transform:translate(-100px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px)
+    }
+}
+@keyframes floating-y {
+    0%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes toRightFromLeft {
+    49% { transform: translate(100%); }
+    50% { opacity: 0; transform: translate(-100%); }
+    51% { opacity: 1; }
+}
