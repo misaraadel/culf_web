@@ -841,15 +841,16 @@ header{
 
 footer{
     width: 100%;
-    padding: 100px 0px 60px 0px;
+    padding: 30px 0px 30px 0px;
     background: url('../images/footer_pattern.png') #0e2258 !important ;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     position: relative;
     
     .content{
+        text-align: center;
         .custom-heading{
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             h4{
                 margin: unset;
                 color: #fff;
@@ -863,13 +864,14 @@ footer{
             font-size: 14px;
             font-weight: 500;
             line-height: 2rem;
-            text-align: justify;
+            text-align: center;
         }
 
         .socail-media{
             display: flex;
             align-items: center;
             align-content: center;
+            justify-content: center;
             li{
                 margin: 0px 8px 0px 0px !important;
                 padding: 0px !important;

@@ -1406,15 +1406,19 @@ header .image-content img {
 
 footer {
   width: 100%;
-  padding: 100px 0px 60px 0px;
+  padding: 30px 0px 30px 0px;
   background: url("../images/footer_pattern.png") #0e2258 !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   position: relative;
 }
 
+footer .content {
+  text-align: center;
+}
+
 footer .content .custom-heading {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 footer .content .custom-heading h4 {
@@ -1431,7 +1435,7 @@ footer .content p {
   font-size: 14px;
   font-weight: 500;
   line-height: 2rem;
-  text-align: justify;
+  text-align: center;
 }
 
 footer .content .socail-media {
@@ -1443,6 +1447,9 @@ footer .content .socail-media {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .content .socail-media li {
